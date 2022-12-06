@@ -67,6 +67,7 @@ func read(basicChan chan<- int, done chan bool) {
 		basicChan <- i
 	}
 }
+
 func removeNegative(prevChan <-chan int, nextChan chan<- int, done <-chan bool) {
 	for {
 		select {
@@ -78,6 +79,7 @@ func removeNegative(prevChan <-chan int, nextChan chan<- int, done <-chan bool) 
 			return
 		}
 	}
+
 }
 
 func removeNotDivTrhree(prevChan <-chan int, nextChan chan<- int, done <-chan bool) {
