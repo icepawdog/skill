@@ -79,7 +79,6 @@ func removeNegative(prevChan <-chan int, nextChan chan<- int, done <-chan bool) 
 			return
 		}
 	}
-
 }
 
 func removeNotDivTrhree(prevChan <-chan int, nextChan chan<- int, done <-chan bool) {
